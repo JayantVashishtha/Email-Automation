@@ -5,7 +5,7 @@ import time
 import os
 
 # 1. Load emails from Excel
-df = pd.read_excel("/content/Nikunj list.xlsx")
+df = pd.read_excel("/content/list.xlsx")
 email_list = df['Email'].dropna().tolist()[450:900]  # Limit to 450 emails
 
 # 2. Load previous log if exists to skip already sent emails
